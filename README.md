@@ -78,6 +78,7 @@ This route allows the API user to add (or remove) points from the current userâ€
 }
 
 POST - http://127.0.0.1:8000/spend
+
 This route allows the API user to spend a specified amount of points from the current userâ€™s balance (provided that they have sufficient points in their balance). It requires a JSON body of the following format:
 
 {"points" : 5000}
