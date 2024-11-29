@@ -1,0 +1,47 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+
+Language - Python
+
+I chose Python for this exercise due to its simplicity and widespread use in web development. Python’s concise syntax allows for my implementation to perform complex tasks while still being accessible to other developers. Additionally, the robust integration of libraries such as Flask and datetime make it an extremely efficient choice for the tasks required in the exercise.
+
+Libraries - Flask, datetime
+
+I used Flask as the framework for the coding exercise as a minimalistic framework that runs with basic code was ideal for a simple API with limited functionality. Flask also makes processing HTTP methods and JSON payloads incredibly convenient which was ideal for the task.
+
+I utilized datetime in order to process the timestamps of the transaction records. Since we are not guaranteed that requests will be sent in chronological timestamp order and we want to determine our spending order based on timestamps, it is necessary to be able to sort the order based on the provided timestamps.
+
+
+
+2. What are the advantages and disadvantages of your solution?
+
+Advantages:
+
+Using Python and Flask allows the solution to be straightforward and efficient, with thorough commenting to ensure that each component is identified and explained.
+
+The solution is lightweight and only contains components necessary to meet the exercise criteria.
+
+The solution accounts for requests being sent out of transaction order and maintains correct spending order regardless.
+
+The solution ensures that there is a sufficient balance for each requested purchase and ensures no payer’s points go negative.
+
+Disadvantages:
+
+The solution lacks thorough error handling beyond ensuring that request bodies are not null and assumes that the request body is sent in the correct format.
+
+The solution does not prevent a payer from adding negative points in excess such that their balance becomes negative.
+
+The solution sorts transactions each time a spend request is made which can become inefficient as the number of transactions increase substantially.
+
+The solution lacks functionality that would be necessary for large-scale implementation such as request authentication and persistent storage.
+
+
+Overall, the solution is efficient, readable, and meets all requested criteria from the exercise prompt. However, it lacks extensive error handling and is built singularly for use in this assignment. When considering it from the perspective of broad implementation, it may make more sense to use a framework such as Django for greater built-in functionality and scalability.
+
+
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+
+One of my favorite projects I have completed thus far was the implementation of a fundamental Unix shell for our Operating Systems class. Built entirely from scratch in C, the project required advanced functionality such as tracking environment and shell variables, maintaining a command history, and implementing piping for inter-process communication.
+
+While we learned the concepts in class, we were tasked with independently learning how to implement process forking, managing child processes, and executing commands programmatically in C. Despite the difficulties of the constraints, the assignment stands out as a favorite of mine as it allowed me to combine theoretical knowledge from lecture with practical application to create a working (though rudimentary) implementation of a technology I use daily. 
+
