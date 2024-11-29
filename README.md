@@ -44,7 +44,7 @@ Once activated, your terminal prompt should indicate the active virtual environm
 
 # Install the required library
 
-With the virtual environment active, run the following command in your terminal to install the Flask framework for the application
+With the virtual environment active, run the following command in your terminal to install the Flask framework neccessary for the application:
 
 “pip install flask”
 
