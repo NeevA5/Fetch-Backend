@@ -15,7 +15,7 @@ transactions = []
 # Home route that provides a simple summary of the total points available
 @app.route("/")
 def home():
-    return "Hello! You currently have " + str(total_points) + " points."
+    return "Hello! You currently have " + str(total_points) + " points. (Refresh this page to reflect transactions)"
 
 # Add route for adding points
 # Expects a JSON request with "payer", "points", and "timestamp" fields
