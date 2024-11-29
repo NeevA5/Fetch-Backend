@@ -13,6 +13,7 @@ payers = {}
 transactions = []
 
 # Home route that provides a simple summary of the total points available
+@app.route("/")
 def home():
     return "Hello! You currently have " + str(total_points) + " points."
 
