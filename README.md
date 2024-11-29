@@ -8,7 +8,9 @@ In order to run the application, it is necessary to have Python and the relevant
 # Check if Python is installed on your device
 
 Try the following commands in your terminal to see if Python is installed on your device
+
 “python --version”
+
 “python3 --version”
 
 If Python is installed, the terminal should output a response similar to:
@@ -23,6 +25,7 @@ If Python is not installed, go to “https://www.python.org/downloads/” to ins
 A virtual environment will allow you to create a custom environment to download the necessary libraries to run the API without affecting any other Python projects. Run the following command in the folder containing the application to create a virtual environment called “venv”:
 
 Windows: “python -m venv venv”
+
 Mac/Linux: “python3 -m venv venv”
 
 
@@ -31,6 +34,7 @@ Mac/Linux: “python3 -m venv venv”
 Once the virtual environment has been created, use the following command to activate the virtual environment:
 
 Windows: “.\venv\Scripts\activate”
+
 Mac/Linux: source venv/bin/activate
 
 Once activated, your terminal prompt should indicate the active virtual environment, as shown below:
@@ -61,9 +65,11 @@ Once the application is running, the terminal should output a message similar to
 Using an HTTP client such as Postman or cURL, send transaction requests on the following routes:
 
 GET -  http://127.0.0.1:8000/balance
+
 This route returns a JSON response body that allows the API user to view the current balances for each payer who has conducted a transaction relevant to the user’s account.
 
 POST -  http://127.0.0.1:8000/add
+
 This route allows the API user to add (or remove) points from the current user’s account from a new or existing payer. It requires a JSON body of the following format:
 
 {
