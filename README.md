@@ -42,12 +42,11 @@ Once activated, your terminal prompt should indicate the active virtual environm
 (venv) $
 
 
-# Install the required libraries
+# Install the required library
 
-Inside the virtual environment, run the following command to install the necessary libraries defined in the pre-defined requirements.txt file:
+With the virtual environment active, run the following command in your terminal to install the Flask framework for the application
 
-
-“pip install -r requirements.txt”
+“pip install flask”
 
 # Run the application
 
